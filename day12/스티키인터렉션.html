@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스티키인터렉션</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .height_section {
+            height: 1000px;
+            /* background-color: pink; */
+        }
+
+        .sticky_box {
+            display: flex;
+        }
+
+        .sticky_box > figure {
+            position: sticky;
+            width: 50%;
+            height: 100vh;
+            top: 0;
+            flex-shrink: 0;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text_box {
+            margin: 300px;
+        }
+
+        .lorem_text { 
+            font-size: 50px;
+
+        }
+        /* vh 브라우저 height pc,모바일 등의 화면에 맞춰서 height끝까지 보여지게 하는것 */
+    </style>
+</head>
+
+<body>
+    <section class="height_section">
+        <div class="lorem_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laborum cumque ullam nesciunt ducimus incidunt velit soluta, quibusdam mollitia hic repellat nihil, illum eos unde officia animi. Tenetur, laborum voluptatum!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo sapiente quisquam ex enim laborum dolorum inventore at accusantium voluptatum odio ipsa maiores sed minima, dolore perferendis repellendus quasi laudantium provident?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, expedita dolorem tempora culpa deserunt nihil reprehenderit itaque sunt minus doloremque quisquam error voluptatibus, blanditiis neque beatae natus. Earum, facilis rerum?
+        </div>
+        <article class="sticky_box">
+            <figure>
+                <img src="./스티키.png" alt="" class="sticky_img">
+            </figure>
+            <div class="text_container">
+                <div class="text_box">
+                    <h2>춘식이</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt similique aut cupiditate eum
+                        voluptates, fugiat temporibus placeat, quaerat rem officiis repellendus animi laudantium
+                        tenetur! Qui earum facere nesciunt fugiat hic.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iusto, ullam accusamus,
+                        voluptate autem voluptates asperiores dolores voluptatum laudantium quisquam adipisci. Commodi
+                        ipsam qui eius debitis voluptates, officiis cumque at.
+                    </p>
+                </div>
+                <div class="text_box">
+                    <h2>고양이</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt similique aut cupiditate eum
+                        voluptates, fugiat temporibus placeat, quaerat rem officiis repellendus animi laudantium
+                        tenetur! Qui earum facere nesciunt fugiat hic.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium commodi mollitia modi
+                        expedita reiciendis neque assumenda quam, delectus quia. Dicta voluptatum perferendis
+                        recusandae, porro in laborum ipsum facere magnam dolorum.
+                    </p>
+                </div>
+                <div class="text_box">
+                    <h2>고양이</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt similique aut cupiditate eum
+                        voluptates, fugiat temporibus placeat, quaerat rem officiis repellendus animi laudantium
+                        tenetur! Qui earum facere nesciunt fugiat hic.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium commodi mollitia modi
+                        expedita reiciendis neque assumenda quam, delectus quia. Dicta voluptatum perferendis
+                        recusandae, porro in laborum ipsum facere magnam dolorum.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <div class="lorem_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laborum cumque ullam nesciunt ducimus incidunt velit soluta, quibusdam mollitia hic repellat nihil, illum eos unde officia animi. Tenetur, laborum voluptatum!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo sapiente quisquam ex enim laborum dolorum inventore at accusantium voluptatum odio ipsa maiores sed minima, dolore perferendis repellendus quasi laudantium provident?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, expedita dolorem tempora culpa deserunt nihil reprehenderit itaque sunt minus doloremque quisquam error voluptatibus, blanditiis neque beatae natus. Earum, facilis rerum?
+        </div>
+    </section>
+</body>
+
+</html>
