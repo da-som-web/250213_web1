@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튜브댓글</title>
+    <script src="https://kit.fontawesome.com/3e0c572474.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .comment_container {
+            display: flex;
+            max-width: 1200px;
+            justify-content: space-between;
+        }
+
+        figure,
+        figure>img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .basis {
+            flex-basis: 90%;
+        }
+
+        .user_name,
+        .comment_content {
+            font-size: 14px;
+        }
+        .icon_box {
+            display: flex;
+            margin: 10px 10px 10px 0;
+            align-items: center;
+        }
+
+        .icon_box > div:first-child {
+            margin-right: 16px;
+        }
+
+        .icon_box > div:nth-child(2) {
+            margin-right: 32px;
+        }
+
+        button {
+            background: none;
+            border: none;
+        }
+
+        .icon_box > p,
+        .icon_box > div > span,
+        .icon_box > div > button > i {
+            color: #585656;
+        }
+
+        .recomment > button {
+            color: #065fd4;
+        }
+    </style>
+</head>
+
+<body>
+    <article class="comment_container">
+        <figure>
+            <img src="./unnamed.jpg" alt="유저프로필사진">
+        </figure>
+
+        <div class="basis">
+            <h2 class="user_name">@youngjinshim3802</h2>
+            <p class="comment_content">
+                내가 잘하는걸 하는건지 좋아하는걸 하는건지, 무한 감명과 무한 공감합니다. 다시 한번 멋진 분이라는걸 느끼고 갑니다.
+            </p>
+
+            <div class="icon_box">
+                <div>
+                    <button>
+                        <i class="fa-regular fa-thumbs-up fa-xl"></i>
+                    </button>
+                    <span>21</span>
+                </div>
+                <div>
+                    <button>
+                        <i class="fa-regular fa-thumbs-down fa-xl"></i>
+                    </button>
+                </div>
+                <p>답글</p>
+            </div>
+
+            <div class="recomment">
+                <button>
+                    <i class="fa-solid fa-chevron-down fa-xl"></i>
+                    <span>답글1개</span>
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <button>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+        </div>
+
+    </article>
+</body>
+
+</html>
